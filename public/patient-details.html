@@ -9,45 +9,53 @@
     <h2>Basic Details</h2>
 
     <form id="patientForm">
-      <input type="text" placeholder="Name" name="name" required>
-      <input type="number" placeholder="Age" name="age" required>
-      
+
+      <!-- Basic Info -->
+      <input type="text" id="name" name="name" placeholder="Name" required>
+      <input type="number" id="age" name="age" placeholder="Age" required>
+      <input type="text" id="phone" name="phone" placeholder="Phone">
+
+      <!-- Gender -->
       <select name="gender">
-        <option>Male</option>
-        <option>Female</option>
-        <option>Other</option>
+        <option value="">Select Gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
       </select>
 
-      <input type="number" placeholder="Weight (kg)" name="weight">
-      <input type="number" placeholder="Height (cm)" name="height">
-      <input type="text" placeholder="Blood Group" name="bloodGroup">
+      <!-- Physical Info -->
+      <input type="number" name="weight" placeholder="Weight (kg)">
+      <input type="number" name="height" placeholder="Height (cm)">
+      <input type="text" name="bloodGroup" placeholder="Blood Group">
 
-      <textarea placeholder="Allergies" name="allergies"></textarea>
+      <!-- Medical Info -->
+      <textarea name="allergies" placeholder="Allergies"></textarea>
 
       <label>Chronic Diseases</label>
       <select name="chronic">
-        <option>None</option>
-        <option>Diabetes</option>
-        <option>Asthma</option>
-        <option>High Blood Pressure</option>
-        <option>Low Blood Pressure</option>
+        <option value="None">None</option>
+        <option value="Diabetes">Diabetes</option>
+        <option value="Asthma">Asthma</option>
+        <option value="High Blood Pressure">High Blood Pressure</option>
+        <option value="Low Blood Pressure">Low Blood Pressure</option>
       </select>
 
-      <textarea placeholder="Any other:" name="otherDisease"></textarea>
+      <textarea name="otherDisease" placeholder="Any other disease"></textarea>
 
       <label>Disability</label>
       <select name="disability">
-        <option>No</option>
-        <option>Yes</option>
+        <option value="No">No</option>
+        <option value="Yes">Yes</option>
       </select>
 
-      <textarea placeholder="If yes, describe" name="disabilityDesc"></textarea>
+      <textarea name="disabilityDesc" placeholder="If yes, describe"></textarea>
 
-      <textarea placeholder="Family History (Optional)" name="familyHistory"></textarea>
-      <textarea placeholder="Undergone any surgical procedures?" name="surgery"></textarea>
-      <textarea placeholder="Anything else?" name="extra"></textarea>
+      <textarea name="familyHistory" placeholder="Family History (Optional)"></textarea>
+      <textarea name="surgery" placeholder="Undergone any surgical procedures?"></textarea>
+      <textarea name="extra" placeholder="Anything else?"></textarea>
 
       <button type="submit">Next</button>
+
     </form>
   </div>
 
