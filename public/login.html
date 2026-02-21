@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2 id="loginTitle"></h2>
+
+    <div id="patientLogin">
+      <input type="text" id="phone" placeholder="Phone Number">
+      <button onclick="patientLogin()">Send OTP</button>
+    </div>
+
+    <div id="doctorLogin">
+      <input type="text" id="hospitalId" placeholder="Hospital ID">
+      <input type="text" id="doctorId" placeholder="Doctor ID">
+      <button onclick="doctorLogin()">Login</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

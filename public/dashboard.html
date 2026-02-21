@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SehatQure Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <!-- LEFT SIDEBAR -->
+    <div class="sidebar-left">
+      <h3>User Profile</h3>
+
+      <div class="profile-box">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=SehatQureUser"
+             alt="QR Code">
+        <h4 id="userName">Patient Name</h4>
+      </div>
+
+      <div class="menu-options">
+        <button onclick="goToUpdate()">Update Profile</button>
+        <button onclick="goToUpload()">Upload Reports</button>
+        <button onclick="contactSupport()">Contact Support</button>
+      </div>
+    </div>
+
+
+    <!-- CENTER CONTENT -->
+    <div class="main-content">
+
+      <!-- EMERGENCY -->
+      <div class="emergency-box">
+        🚨 EMERGENCY!
+      </div>
+
+      <!-- ACTION BOXES -->
+      <div class="action-row">
+        <div class="action-box" onclick="window.location.href='consult-doctor.html'">
+            Consult a Doctor
+        </div>
+
+        <div class="action-box" onclick="window.location.href='consult-ai.html'">
+            Consult SehatQure AI
+        </div>
+      </div>
+
+      <div class="action-row">
+        <div class="action-box" onclick="window.location.href='priority-score.html'">
+            Priority Score
+        </div>
+
+        <div class="action-box" onclick="window.location.href='nearest-hospital.html'">
+            Contact Nearest Hospital
+        </div>
+      </div>
+    </div>
+
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="sidebar-right">
+      <h3>Chat with SehatQure AI</h3>
+
+      <div class="chat-box">
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

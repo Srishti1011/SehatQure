@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Patient Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Basic Details</h2>
+
+    <form id="patientForm">
+      <input type="text" placeholder="Name" name="name" required>
+      <input type="number" placeholder="Age" name="age" required>
+      
+      <select name="gender">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+      </select>
+
+      <input type="number" placeholder="Weight (kg)" name="weight">
+      <input type="number" placeholder="Height (cm)" name="height">
+      <input type="text" placeholder="Blood Group" name="bloodGroup">
+
+      <textarea placeholder="Allergies" name="allergies"></textarea>
+
+      <label>Chronic Diseases</label>
+      <select name="chronic">
+        <option>None</option>
+        <option>Diabetes</option>
+        <option>Asthma</option>
+        <option>High Blood Pressure</option>
+        <option>Low Blood Pressure</option>
+      </select>
+
+      <textarea placeholder="Any other:" name="otherDisease"></textarea>
+
+      <label>Disability</label>
+      <select name="disability">
+        <option>No</option>
+        <option>Yes</option>
+      </select>
+
+      <textarea placeholder="If yes, describe" name="disabilityDesc"></textarea>
+
+      <textarea placeholder="Family History (Optional)" name="familyHistory"></textarea>
+      <textarea placeholder="Undergone any surgical procedures?" name="surgery"></textarea>
+      <textarea placeholder="Anything else?" name="extra"></textarea>
+
+      <button type="submit">Next</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

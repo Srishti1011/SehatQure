@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nearest Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2 class="location-heading">
+    Which one of the following locations is closest to you?
+  </h2>
+
+  <div class="location-buttons" id="locationButtons">
+
+    <button onclick="showHospital('modelTown')">Model Town</button>
+    <button onclick="showHospital('urban1')">Urban Estate Phase 1</button>
+    <button onclick="showHospital('urban2')">Urban Estate Phase 2</button>
+    <button onclick="showHospital('tripuri')">Tripuri</button>
+    <button onclick="showHospital('rajpura')">Rajpura Road</button>
+    <button onclick="showHospital('sirhind')">Sirhind Road</button>
+
+  </div>
+
+  <div id="hospitalDisplay" class="hospital-display"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
